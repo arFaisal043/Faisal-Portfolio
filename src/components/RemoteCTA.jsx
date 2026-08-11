@@ -11,7 +11,7 @@ export default function RemoteCTA() {
           <p className="cta-sub">I ship quality work across time zones, communicate proactively, and know how to unblock myself. Let's talk about how I can add value to your team.</p>
           <div className="cta-actions">
             <ShinyButton href="mailto:arfaisal463@gmail.com">Schedule a Chat ✉</ShinyButton>
-            <ShinyButton href="#" outline>Download Resume ↓</ShinyButton>
+            <ShinyButton href="/Resume.pdf" target="_blank" rel="noopener noreferrer" outline>Download Resume ↓</ShinyButton>
           </div>
         </div>
       </div>
