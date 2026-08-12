@@ -21,7 +21,7 @@ export default function Navbar({ dark, setDark }) {
           </div>
           <div className="nav-actions">
             <button className="btn-theme" onClick={() => setDark(!dark)}>{dark ? "☀️" : "🌙"}</button>
-            <ShinyButton href="https://drive.google.com/file/d/1U7VuDmkm_6gQ64Hv_RDWcR7XKM39QccN/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume ↓</ShinyButton>
+            <ShinyButton href="https://drive.google.com/file/d/1C_7fz0QNnb3oER9fRUl1ipem7OY5q0rA/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume ↓</ShinyButton>
             <button className="hamburger" onClick={() => setOpen(!open)}>
               <span /><span /><span />
             </button>
