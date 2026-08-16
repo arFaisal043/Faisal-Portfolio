@@ -8,37 +8,227 @@ export const SKILLS = {
 };
 
 export const PROJECTS = [
+  // Full Stack
+  {
+    category: "fullstack",
+    title: "VibeNews - Full-Stack News Portal",
+    desc: "VibeNews is a modern, responsive full-stack web application designed for publishing, reading, and managing news articles. Built as a final assignment for Ostad, it features a clean user interface, secure authentication, and a robust backend.",
+    tags: ["React", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/arFaisal043/OSTAD_FINAL_ASSIGNMENT",
+    demo: "#",
+    bg: "#150f2a",
+    icon: "📰",
+  },
+
   // Backend
-  { category: "backend", title: "FixItNow — Home Service Platform", desc: "Architected a modular backend using Prisma ORM and PostgreSQL, developing 20 secure RESTful APIs for user authentication, bookings, and category management. Integrated Stripe with secure webhook processing.", tags: ["Node.js", "TypeScript", "Express", "PostgreSQL", "Prisma", "Stripe"], github: "#", demo: "#", bg: "#0c2236", icon: "🛠️" },
-  { category: "backend", title: "DevPulse — Team Issue Tracker", desc: "Developed a collaborative backend platform for software teams. Secured API access with JWT and RBAC. Optimized PostgreSQL schema and queries for workflows.", tags: ["Node.js", "Express", "PostgreSQL", "TypeScript"], github: "#", demo: "#", bg: "#150f2a", icon: "🐞" },
-  { category: "backend", title: "Prisma Press", desc: "A modular blog backend built with Express, TypeScript, Prisma, and PostgreSQL. It provides the API needed for authentication, user profiles, blog posts, comments, and admin reporting.", tags: ["Express", "TypeScript", "Prisma", "PostgreSQL"], github: "https://github.com/arFaisal043/prisma-blog-app", demo: "#", bg: "#101d2a", icon: "📝" },
-  { category: "backend", title: "Task Manager API", desc: "A simple task manager backend built with Node.js, Express, and MongoDB. It provides the API needed for authentication, task creation, task assignment, status updates, and deadline tracking.", tags: ["Node.js", "Express", "MongoDB"], github: "https://github.com/arFaisal043/Task-Manager", demo: "#", bg: "#1a1215", icon: "✅" },
+  {
+    category: "backend",
+    title: "FixItNow — Home Service Platform",
+    desc: "Architected a modular backend using Prisma ORM and PostgreSQL, developing 20 secure RESTful APIs for user authentication, bookings, and category management. Integrated Stripe with secure webhook processing.",
+    tags: [
+      "Node.js",
+      "TypeScript",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
+      "Stripe",
+    ],
+    github: "#",
+    demo: "#",
+    bg: "#0c2236",
+    icon: "🛠️",
+  },
+  {
+    category: "backend",
+    title: "DevPulse — Team Issue Tracker",
+    desc: "Developed a collaborative backend platform for software teams. Secured API access with JWT and RBAC. Optimized PostgreSQL schema and queries for workflows.",
+    tags: ["Node.js", "Express", "PostgreSQL", "TypeScript"],
+    github: "#",
+    demo: "#",
+    bg: "#150f2a",
+    icon: "🐞",
+  },
+  {
+    category: "backend",
+    title: "NexusBlog",
+    desc: "NexusBlog is a modular blog backend built with Express, TypeScript, Prisma, and PostgreSQL. It provides the API needed for authentication, user profiles, blog posts, comments, and admin reporting.",
+    tags: ["Express", "TypeScript", "Prisma", "PostgreSQL"],
+    github: "https://github.com/arFaisal043/prisma-blog-app",
+    demo: "#",
+    bg: "#101d2a",
+    icon: "📝",
+  },
+  {
+    category: "backend",
+    title: "Task Manager API",
+    desc: "A simple task manager backend built with Node.js, Express, and MongoDB. It provides the API needed for authentication, task creation, task assignment, status updates, and deadline tracking.",
+    tags: ["Node.js", "Express", "MongoDB"],
+    github: "https://github.com/arFaisal043/Task-Manager",
+    demo: "#",
+    bg: "#1a1215",
+    icon: "✅",
+  },
 
   // Data Analytics
-  { category: "analytics", title: "Telco Customer Churn Analysis", desc: "Analyzed customer churn data to understand why customers are leaving and what actions can reduce churn for subscription-based businesses.", tags: ["Python", "EDA", "Data Analysis"], github: "https://github.com/arFaisal043/Python_EDA_Project", demo: "#", bg: "#0d2b1d", icon: "📊" },
-  { category: "analytics", title: "IPL 2022 Data Analysis", desc: "Analyzed IPL 2022 match-level data to uncover insights into team performances, player contributions, and match dynamics.", tags: ["Python", "Pandas", "Data Analysis"], github: "https://github.com/arFaisal043/Learn-Python/tree/main/Project_1(%20IPL)", demo: "#", bg: "#1c142e", icon: "🏏" },
-  { category: "analytics", title: "Retail Sales Dataset Analysis", desc: "Analyzed a retail sales customer dataset focusing on customer acquisition trends, demographics, and geographic distribution.", tags: ["Python", "Data Analysis"], github: "https://github.com/arFaisal043/Learn-Python/tree/main/Project_2(%20Retail%20Sale%20)", demo: "#", bg: "#2b1414", icon: "🛍️" },
+  {
+    category: "analytics",
+    title: "Telco Customer Churn Analysis",
+    desc: "Analyzed customer churn data to understand why customers are leaving and what actions can reduce churn for subscription-based businesses.",
+    tags: ["Python", "EDA", "Data Analysis"],
+    github: "https://github.com/arFaisal043/Python_EDA_Project",
+    demo: "#",
+    bg: "#0d2b1d",
+    icon: "📊",
+  },
+  {
+    category: "analytics",
+    title: "IPL 2022 Data Analysis",
+    desc: "Analyzed IPL 2022 match-level data to uncover insights into team performances, player contributions, and match dynamics.",
+    tags: ["Python", "Pandas", "Data Analysis"],
+    github:
+      "https://github.com/arFaisal043/Learn-Python/tree/main/Project_1(%20IPL)",
+    demo: "#",
+    bg: "#1c142e",
+    icon: "🏏",
+  },
+  {
+    category: "analytics",
+    title: "Retail Sales Dataset Analysis",
+    desc: "Analyzed a retail sales customer dataset focusing on customer acquisition trends, demographics, and geographic distribution.",
+    tags: ["Python", "Data Analysis"],
+    github:
+      "https://github.com/arFaisal043/Learn-Python/tree/main/Project_2(%20Retail%20Sale%20)",
+    demo: "#",
+    bg: "#2b1414",
+    icon: "🛍️",
+  },
 
   // Database Design
-  { category: "database", title: "Online Course Enrollment DB", desc: "EduEnroll DB is a PostgreSQL database project that explores SQL JOIN operations through a course enrollment system. It reveals enrollment patterns and identifies inactive students.", tags: ["SQL", "PostgreSQL", "Database"], github: "https://github.com/arFaisal043/Database-Project/blob/main/Online_Course_Enrollment_DB.sql", demo: "#", bg: "#101820", icon: "🎓" },
-  { category: "database", title: "Football Ticket Booking System", desc: "A relational database project built with PostgreSQL for managing users, match fixtures, and ticket bookings with a strong emphasis on complex SQL JOIN operations.", tags: ["SQL", "PostgreSQL", "Database"], github: "https://github.com/arFaisal043/Database-Project/blob/main/Football_Ticket_Booking_System.sql", demo: "#", bg: "#102319", icon: "⚽" },
+  {
+    category: "database",
+    title: "Online Course Enrollment DB",
+    desc: "EduEnroll DB is a PostgreSQL database project that explores SQL JOIN operations through a course enrollment system. It reveals enrollment patterns and identifies inactive students.",
+    tags: ["SQL", "PostgreSQL", "Database"],
+    github:
+      "https://github.com/arFaisal043/Database-Project/blob/main/Online_Course_Enrollment_DB.sql",
+    demo: "#",
+    bg: "#101820",
+    icon: "🎓",
+  },
+  {
+    category: "database",
+    title: "Football Ticket Booking System",
+    desc: "A relational database project built with PostgreSQL for managing users, match fixtures, and ticket bookings with a strong emphasis on complex SQL JOIN operations.",
+    tags: ["SQL", "PostgreSQL", "Database"],
+    github:
+      "https://github.com/arFaisal043/Database-Project/blob/main/Football_Ticket_Booking_System.sql",
+    demo: "#",
+    bg: "#102319",
+    icon: "⚽",
+  },
 
   // Android
-  { category: "android", title: "অর্থখাতা (ArthoKhata)", desc: "বাংলাদেশি ছোট ব্যবসার জন্য Bengali-first Expo React Native হিসাব অ্যাপ। (A Bengali-first accounting app for small businesses in Bangladesh).", tags: ["React Native", "Expo", "Mobile"], github: "https://github.com/ash-rafhamid/ArthoKhata", demo: "#", bg: "#1f1f1f", icon: "📱" },
+  {
+    category: "android",
+    title: "অর্থখাতা (ArthoKhata)",
+    desc: "বাংলাদেশি ছোট ব্যবসার জন্য Bengali-first Expo React Native হিসাব অ্যাপ। (A Bengali-first accounting app for small businesses in Bangladesh).",
+    tags: ["React Native", "Expo", "Mobile"],
+    github: "https://github.com/ash-rafhamid/ArthoKhata",
+    demo: "#",
+    bg: "#1f1f1f",
+    icon: "📱",
+  },
 
   // AI/ML
-  { category: "ai", title: "Potato Price Prediction", desc: "A machine learning project using Artificial Neural Networks (ANN) to predict potato prices.", tags: ["Python", "ANN", "Machine Learning"], github: "https://github.com/arFaisal043/Learn-Python/tree/main/AI/ANN", demo: "#", bg: "#2b2311", icon: "🥔" },
-  { category: "ai", title: "Brain Tumor MRI Classification", desc: "A deep learning project using Convolutional Neural Networks (CNN) and transfer learning to classify brain tumors from MRI scans.", tags: ["Python", "CNN", "Deep Learning"], github: "https://github.com/arFaisal043/Learn-Python/blob/main/AI/CNN/cnn-project-1%20(2).ipynb", demo: "#", bg: "#201217", icon: "🧠" },
+  {
+    category: "ai",
+    title: "Potato Price Prediction",
+    desc: "A machine learning project using Artificial Neural Networks (ANN) to predict potato prices.",
+    tags: ["Python", "ANN", "Machine Learning"],
+    github: "https://github.com/arFaisal043/Learn-Python/tree/main/AI/ANN",
+    demo: "#",
+    bg: "#2b2311",
+    icon: "🥔",
+  },
+  {
+    category: "ai",
+    title: "Brain Tumor MRI Classification",
+    desc: "A deep learning project using Convolutional Neural Networks (CNN) and transfer learning to classify brain tumors from MRI scans.",
+    tags: ["Python", "CNN", "Deep Learning"],
+    github:
+      "https://github.com/arFaisal043/Learn-Python/blob/main/AI/CNN/cnn-project-1%20(2).ipynb",
+    demo: "#",
+    bg: "#201217",
+    icon: "🧠",
+  },
 
   // AI Automation
-  { category: "automation", title: "Automated Email Sender", desc: "A fully automated email sending system that leverages AI-powered personalization to send contextual, human-like emails. Built with n8n and Google Gemini AI.", tags: ["n8n", "Gemini AI", "Automation"], github: "https://github.com/arFaisal043/AI-Automation-Projects-by-n8n/tree/main/project_1_Email_sender_Automation", demo: "#", bg: "#0d2b27", icon: "✉️" },
-  { category: "automation", title: "Email Auto Labeling System", desc: "An intelligent email classification system that automatically reads incoming emails and applies relevant labels using Google Gemini AI.", tags: ["n8n", "Gemini AI", "Automation"], github: "https://github.com/arFaisal043/AI-Automation-Projects-by-n8n/tree/main/project_2_Email_auto-labeling", demo: "#", bg: "#232b0d", icon: "🏷️" },
-  { category: "automation", title: "Weather Alert Telegram Bot", desc: "A fully automated weather bot that sends live weather updates to Telegram every 5 minutes. No manual asking, just automatic alerts.", tags: ["n8n", "Telegram API", "Automation"], github: "https://github.com/arFaisal043/AI-Automation-Projects-by-n8n/tree/main/project_3_Weather_Alert_Bot", demo: "#", bg: "#101f2e", icon: "🌦️" },
+  {
+    category: "automation",
+    title: "Automated Email Sender",
+    desc: "A fully automated email sending system that leverages AI-powered personalization to send contextual, human-like emails. Built with n8n and Google Gemini AI.",
+    tags: ["n8n", "Gemini AI", "Automation"],
+    github:
+      "https://github.com/arFaisal043/AI-Automation-Projects-by-n8n/tree/main/project_1_Email_sender_Automation",
+    demo: "#",
+    bg: "#0d2b27",
+    icon: "✉️",
+  },
+  {
+    category: "automation",
+    title: "Email Auto Labeling System",
+    desc: "An intelligent email classification system that automatically reads incoming emails and applies relevant labels using Google Gemini AI.",
+    tags: ["n8n", "Gemini AI", "Automation"],
+    github:
+      "https://github.com/arFaisal043/AI-Automation-Projects-by-n8n/tree/main/project_2_Email_auto-labeling",
+    demo: "#",
+    bg: "#232b0d",
+    icon: "🏷️",
+  },
+  {
+    category: "automation",
+    title: "Weather Alert Telegram Bot",
+    desc: "A fully automated weather bot that sends live weather updates to Telegram every 5 minutes. No manual asking, just automatic alerts.",
+    tags: ["n8n", "Telegram API", "Automation"],
+    github:
+      "https://github.com/arFaisal043/AI-Automation-Projects-by-n8n/tree/main/project_3_Weather_Alert_Bot",
+    demo: "#",
+    bg: "#101f2e",
+    icon: "🌦️",
+  },
 
   // CLI
-  { category: "cli", title: "Employee Payroll System", desc: "An Object-Oriented Programming (OOP) project designed for learning and practicing core OOP concepts in Java through a real-world application.", tags: ["Java", "OOP", "CLI"], github: "https://github.com/arFaisal043/java-employee-payroll-system", demo: "#", bg: "#1e131d", icon: "💼" },
-  { category: "cli", title: "Python File Manager CLI", desc: "A lightweight command-line file management system built with Python for efficient file operations.", tags: ["Python", "CLI"], github: "https://github.com/arFaisal043/Python-File-Manager-CLI-Tool", demo: "#", bg: "#131e1c", icon: "📁" },
-  { category: "cli", title: "Library Management System", desc: "A C-based console application for managing library resources with role-based access for admins and students, using DSA concepts.", tags: ["C", "DSA", "CLI"], github: "https://github.com/arFaisal043/DSA-with-C-PlusPlus/blob/main/ds-project.c", demo: "#", bg: "#1e1613", icon: "📚" }
+  {
+    category: "cli",
+    title: "Employee Payroll System",
+    desc: "An Object-Oriented Programming (OOP) project designed for learning and practicing core OOP concepts in Java through a real-world application.",
+    tags: ["Java", "OOP", "CLI"],
+    github: "https://github.com/arFaisal043/java-employee-payroll-system",
+    demo: "#",
+    bg: "#1e131d",
+    icon: "💼",
+  },
+  {
+    category: "cli",
+    title: "Python File Manager CLI",
+    desc: "A lightweight command-line file management system built with Python for efficient file operations.",
+    tags: ["Python", "CLI"],
+    github: "https://github.com/arFaisal043/Python-File-Manager-CLI-Tool",
+    demo: "#",
+    bg: "#131e1c",
+    icon: "📁",
+  },
+  {
+    category: "cli",
+    title: "Library Management System",
+    desc: "A C-based console application for managing library resources with role-based access for admins and students, using DSA concepts.",
+    tags: ["C", "DSA", "CLI"],
+    github:
+      "https://github.com/arFaisal043/DSA-with-C-PlusPlus/blob/main/ds-project.c",
+    demo: "#",
+    bg: "#1e1613",
+    icon: "📚",
+  },
 ];
 
 export const ACHIEVEMENTS = [

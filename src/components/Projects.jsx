@@ -10,6 +10,7 @@ export default function Projects() {
   useReveal([filter, showAll]);
   const tabs = [
     {id:"all",label:"All"},
+    {id:"fullstack",label:"Full Stack Development"},
     {id:"backend",label:"Backend Development"},
     {id:"analytics",label:"Data Analytics"},
     {id:"database",label:"Database Design"},
