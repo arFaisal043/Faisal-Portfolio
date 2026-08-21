@@ -4,6 +4,34 @@ import JsonWindow from "./JsonWindow";
 import Projects from "./Projects";
 import Certifications from "./Certifications";
 
+const AnimatedNumber = ({ end, suffix }) => {
+  const [count, setCount] = useState(0);
+  
+  useEffect(() => {
+    if (typeof end !== "number") {
+      return;
+    }
+    let start = 0;
+    const duration = 1500; // 1.5 seconds animation
+    const increment = end / (duration / 16);
+    
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        setCount(end);
+        clearInterval(timer);
+      } else {
+        setCount(Math.ceil(start));
+      }
+    }, 16);
+    
+    return () => clearInterval(timer);
+  }, [end]);
+
+  if (typeof end !== "number") return <>{end}</>;
+  return <>{count}{suffix}</>;
+};
+
 export default function Hero() {
   const [text, setText] = useState("");
   const full = "Building Scalable\nBackend Solutions\nfor Global Teams.";
@@ -13,11 +41,10 @@ export default function Hero() {
     return () => clearInterval(id);
   }, []);
   return (
-    <section className="hero">
+    <section className="hero hero-centered">
       <div className="hero-bg-glow" />
       <div className="container">
-        <div className="hero-grid">
-          <div>
+        <div className="hero-content">
             <div className="hero-badge reveal delay-1">
               <span className="hero-badge-dot" />
               Available for Remote Work
@@ -36,12 +63,19 @@ export default function Hero() {
               <ShinyButton href="#contact" outline>Let's Collaborate</ShinyButton>
             </div>
             <div className="stats-strip reveal delay-5">
-              {[["20+", "Projects Completed"], ["200+", "DSA Problem Solved"], ["∞", "Lines of Code"]].map(([n, l]) => (
-                <div key={l}><div className="stat-num">{n}</div><div className="stat-label">{l}</div></div>
-              ))}
-            </div>
+            {[
+              { end: 20, suffix: "+", label: "Projects Completed" },
+              { end: 200, suffix: "+", label: "DSA Problem Solved" },
+              { end: "∞", suffix: "", label: "Lines of Code" }
+            ].map(({ end, suffix, label }) => (
+              <div key={label}>
+                <div className="stat-num">
+                  <AnimatedNumber end={end} suffix={suffix} />
+                </div>
+                <div className="stat-label">{label}</div>
+              </div>
+            ))}
           </div>
-          <JsonWindow />
         </div>
       </div>
     </section>

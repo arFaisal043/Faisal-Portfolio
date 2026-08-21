@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @property --gradient-angle {
   syntax: "<angle>";
@@ -470,9 +470,51 @@ body {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background:
-    radial-gradient(ellipse 60% 50% at 70% 50%, rgba(0, 102, 255, 0.07) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 30% 60%, rgba(139, 92, 246, 0.04) 0%, transparent 70%);
+  background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+}
+
+[data-theme="light"] .hero-bg-glow {
+  background: 
+    radial-gradient(circle 800px at 100% 200px, rgba(213, 197, 255, 0.4), transparent),
+    linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  background-size: 100% 100%, 6rem 4rem, 6rem 4rem;
+  background-color: #ffffff;
+}
+
+.hero-centered {
+  text-align: center;
+}
+
+.hero-centered .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-centered .hero-badge {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-centered .hero-sub {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-centered .hero-ctas {
+  justify-content: center;
+}
+
+.hero-centered .stats-strip {
+  justify-content: center;
+  border-top: none;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 32px;
 }
 
 .hero-grid {
@@ -488,15 +530,23 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Inter', sans-serif;
   font-size: 0.82rem;
-  padding: 7px 16px;
+  font-weight: 500;
+  padding: 6px 16px;
   border-radius: 100px;
-  border: 1px solid var(--border);
-  background: var(--bg-surface);
-  color: var(--text-secondary);
-  margin-bottom: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 24px;
   margin-top: 32px;
+}
+
+[data-theme="light"] .hero-badge {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.03);
+  color: #0f1117;
 }
 
 .hero-badge-dot {
@@ -521,26 +571,40 @@ body {
 }
 
 .hero-title {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(2.1rem, 4.2vw, 3.4rem);
-  font-weight: 700;
-  line-height: 1.13;
-  letter-spacing: -0.03em;
-  color: var(--text-primary);
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
+  color: #ffffff;
   white-space: pre-line;
 }
 
+[data-theme="light"] .hero-title {
+  color: #0f1117;
+}
+
 .hero-title .accent {
-  color: var(--btn-blue);
+  color: #a78bfa;
+  font-style: italic;
+}
+
+[data-theme="light"] .hero-title .accent {
+  color: #8b5cf6;
 }
 
 
 .hero-sub {
-  font-size: 1.05rem;
-  color: var(--text-secondary);
-  max-width: 480px;
-  margin: 20px 0 36px;
-  line-height: 1.75;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 540px;
+  margin: 24px 0 40px;
+  line-height: 1.6;
+}
+
+[data-theme="light"] .hero-sub {
+  color: #4a5168;
 }
 
 .hero-ctas {
@@ -560,15 +624,26 @@ body {
 
 .stat-num {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: var(--btn-blue);
+  color: #ffffff;
+}
+
+[data-theme="light"] .stat-num {
+  color: #0f1117;
 }
 
 .stat-label {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  margin-top: 2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+[data-theme="light"] .stat-label {
+  color: #4a5168;
 }
 
 /* ── CODE WINDOW ── */
