@@ -19,7 +19,7 @@ export default function JsonWindow() {
         <pre style={{ margin: 0, whiteSpace: "pre-wrap" }}>
           {s(c.brace, "{\n")}
           {s(c.muted, "  ")}{s(c.key, '"name"')}{s(c.brace, ": ")}{s(c.str, '"Abdur Rahman Faisal"')}{s(c.brace, ",\n")}
-          {s(c.muted, "  ")}{s(c.key, '"role"')}{s(c.brace, ": ")}{s(c.str, '"Backend Developer"')}{s(c.brace, ",\n")}
+          {s(c.muted, "  ")}{s(c.key, '"role"')}{s(c.brace, ": ")}{s(c.str, '["Backend Developer", "Full Stack Developer"]')}{s(c.brace, ",\n")}
           {s(c.muted, "  ")}{s(c.key, '"location"')}{s(c.brace, ": ")}{s(c.str, '"Dhaka, Bangladesh"')}{s(c.brace, ",\n")}
           {s(c.muted, "  ")}{s(c.key, '"stack"')}{s(c.brace, ": {\n")}
           {s(c.muted, "    ")}{s(c.key, '"languages"')}{s(c.brace, ": ")}{s(c.arr, '["C/C++", "JavaScript", "TypeScript", "Python", "Java"]')}{s(c.brace, ",\n")}
